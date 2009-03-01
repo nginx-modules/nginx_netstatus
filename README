@@ -1,5 +1,24 @@
-nginx_netstatus - nginx webserver module to show network connection status
 
-Homepage: http://source.nnov.ru/nginx_netstatus
+ nginx_netstatus - nginx webserver module to show network connection status
 
-thanks for usage.
+ Homepage: http://source.nnov.ru/nginx_netstatus
+ Email: seogarry@gmail.com 
+
+ [*] Compile nginx with nginx_netstatus
+
+ $ ./configure --add-module={path to nginx_netstatus}
+ $ make && make install
+
+ [*] Configuration
+ 
+ location /netstats$ {
+
+  		  netstatus on;
+ }
+ 
+ [*] Usage
+ 
+ open in browser http://yousmartyhost.org/netstats 
+
+ -----------------
+ thanks for usage, any questions and improvment requests send to email.
